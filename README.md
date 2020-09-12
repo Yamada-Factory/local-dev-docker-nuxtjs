@@ -30,7 +30,11 @@ $ git clone git@github.com:{vue-project}.git
 $ cp .env.sample .env
 
 $ vim .env
-dir=nuxt-project
+dir=vue-project
+
+$ vim Dockerfile
+- EXPOSE 3000
++ EXPOSE 8080
 
 $ vim docker-compose.yml
 - command: sh -c "npm install && npm run dev"
